@@ -45,6 +45,7 @@ body {
 .conteudo {
     /* margin-bottom: 92px; */
     margin-bottom: 108px;
+    /* scrollbar-width: none; */
 }
 
 .categoria {
@@ -70,6 +71,7 @@ body {
     margin: 17px 0 0;
     display: flex;
     overflow-x: scroll;
+    scrollbar-width: none; /*Perguntar pro Paulo*/
     /* background-color: blueviolet; apagar */
 }
 
@@ -92,6 +94,7 @@ body {
 .opcao > img {
     width: 144px;
     height: 87px;
+    object-fit: cover;
     margin: 18px 14px 0;
     border-radius: 4px;
 }
@@ -146,10 +149,11 @@ body {
 button {
     width: 364px;
     height: 61px;
-    position: fixed;
+    margin: 15px 25px 16px;
+    /* position: fixed;
     bottom: 16px;
     left: 25px;
-    z-index: 2;
+    z-index: 2; */
     background: #CBCBCB;
     border-radius: 50px;
     border: none;
@@ -170,6 +174,86 @@ button {
 .fechar-pedido {
     font-weight: 700;
     background: #32B72F;
+}
+
+.tela-branca {
+    width: 414px;
+    height: 1026px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.confirmar-pedido {
+    width: 377px;
+    height: 353px;
+    position: fixed;
+    top: 336.5px;
+    left: 18.5px;
+    z-index: 2;
+    /* margin: 336.5px 18.5px; */
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.confirmar-pedido > h5 {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.mensagem-confirmacao {
+    width: 326px;
+    margin: 28px 25px 0 26px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmar-pedido button {
+    width: 329px;
+    height: 52px;
+    margin: 11px 24px 0;
+    background: #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.018em;
+    color: #50D074;
+}
+
+.confirmar-pedido > h6 {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    margin: 15px 0;
+}
+
+.nomes{
+    font-weight: 400;
+    letter-spacing: 0.018em;
+    text-align: initial;
+    margin-bottom: 13px;
+}
+
+.precos {
+    text-align: right;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }
 
 .apagar {
