@@ -49,7 +49,7 @@ function fecharPedido () {
 }
 
 function confirmarPedido() {
-    const nome = prompt("Qual o seu nome?");
+    const nome = prompt("Qual é o seu nome?");
     const endereco = prompt("Qual é o seu endereço?");
     
     const prato = document.querySelector(".categoria").querySelector(".selecionado").querySelector("h5").innerText;
@@ -80,6 +80,10 @@ function confirmarPedido() {
     document.querySelector(".inserir-link").innerHTML = linkWhats;
 
     document.querySelector(".tela-branca").classList.remove("apagar");
-    document.querySelector(".barra-topo").classList.add("apagar");
-    document.querySelector(".barra-enviar").classList.add("apagar");    
+    // document.querySelector(".barra-topo").classList.add("apagar");
+    // document.querySelector(".barra-enviar").classList.add("apagar");    
+}
+
+function cancelar() {
+    document.querySelector(".tela-branca").classList.add("apagar");
 }
